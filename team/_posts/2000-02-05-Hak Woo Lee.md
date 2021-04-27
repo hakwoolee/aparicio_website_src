@@ -1,8 +1,8 @@
 ---
 layout: member
-title: Hak Woo Lee
+title: Hakwoo Lee
 position: Graduate Research Assistant
-email: 
+email: hwlee@bccrc.ca
 scholar: 
 image: /assets/images/team/Lee-HakWoo.jpeg
 cv: 
