@@ -65,19 +65,20 @@ navorder: 1
 				<div class="accordion-item">
 					<h2 class="accordion-header" id= "{{ job.title }}">
 					<button class="accordion-button collapsed buttonActivate" type="button" data-bs-trigger="hover focus" data-bs-toggle="collapse" data-bs-target="#ID2" aria-expanded="false" aria-controls="ID2">
-						<!-- <img src="Research1.png" width=50 alt=""> -->
 						<a>{{ job.title }}</a>
 						
 					</button>
 					</h2>
 
 					<div width = '100' class="accordion-collapse collapse accordionContentLocator" aria-labelledby="{{ job.title }}" data-bs-parent="#accordionFlushExample">
-						<div class="accordion-body">{{ job.description }}</div>
-
-						<div class="smallspacer"></div>
-						<div class="btn-group" role="group" aria-label="Basic example">
-							<a href="{{ job.applyLink }}"><button type="button" class="btn btn-outline-primary">Apply Now</button></a>
-						</div>
+						<div class="accordion-body">{{ job.content }}</div>
+						
+						{% if job.applyLink==true %}
+							<div class="smallspacer"></div>
+							<div class="btn-group" role="group" aria-label="Basic example">
+								<a href="{{ job.applyLink }}"><button type="button" class="btn btn-outline-primary">Apply Now</button></a>
+							</div>
+						{% endif %}
 						<div class="smallspacer"></div>
 
 					</div>
